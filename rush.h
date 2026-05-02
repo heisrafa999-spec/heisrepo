@@ -12,5 +12,5 @@ void	ft_putstr(char *str);
 char	*read_dict(char *filename);
 t_dict	*parse_dict(char *str);
 
-#endifexit
+#endif
 
