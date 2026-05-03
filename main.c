@@ -37,8 +37,13 @@ int	main(int argc, char **argv)
 
 	parsed = parse_dict(dict);
 
-	// ainda não convertemos
-	ft_putstr("parse ok\n");
+	if (!parsed)
+	{
+		write(1, "Dict Error\n", 11);
+		return (1);
+	}
+
+	print_number(number, parsed);
 
 	return (0);
 }

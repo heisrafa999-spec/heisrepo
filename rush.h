@@ -12,5 +12,10 @@ void	ft_putstr(char *str);
 char	*read_dict(char *filename);
 t_dict	*parse_dict(char *str);
 
-#endif
+char	*find_value(char *key, t_dict *dict);
+int		ft_strcmp(char *s1, char *s2);
 
+void	print_number(char *nbr, t_dict *dict);
+void	print_2digits(char *nbr, t_dict *dict);
+
+#endif
